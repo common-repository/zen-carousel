@@ -1,0 +1,60 @@
+#zencarousel{
+	position: relative;
+}
+#zencarousel a, #zencarousel img{
+	border: none;
+}
+.zc_numbers{
+	position: absolute;
+	z-index: 20;
+}
+.zc_numbers ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.zc_numbers li{
+	display: inline-block;
+	border: 1px dotted #666;
+	background-color: #444;
+}
+.zc_numbers li.on{
+	background-color: #555;
+}
+.zc_numbers li span{
+	display: none;
+}
+.zc_container span.prev{
+	display: none;
+	z-index: 10;
+	position: absolute;
+	top: 250px;
+	left: 10px;
+	width: 35px;
+	height: 40px;
+}
+.zc_container span.next{
+	display: none;
+	z-index: 10;
+	position: absolute;
+	top: 250px;
+	right: 10px;
+	width: 35px;
+	height: 40px;
+}
+
+.zc_overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.zc_overlay div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.zc_overlay div.on{
+	display: block;
+}
